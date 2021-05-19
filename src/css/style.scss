@@ -153,6 +153,7 @@
       }
       @media screen and (max-width:576px){
         font-size: 46px;
+        margin: 80px 0 15px 0;
        }
       p {
         span {
@@ -223,19 +224,132 @@
     }
 }
 
-
 .featured {
 
+  background: #fafafa;
+  padding-bottom: 175px;
+  @media screen and (max-width:576px){
+    padding-bottom: 100px;
+  }
 
 		&__title {
+      margin-top: 55px;
+      margin-bottom: 82px ;
+      opacity: 0.73;
+      font-family: 'Metropolis';
+      font-size: 23px;
+      font-weight: 500;
+      letter-spacing: 2.1px;
+      text-align: center;
+      color: #373737;
 		}
 
 		&__slider {
-      max-width: 660px;
+      max-width: 1200px;
+      @media screen and (max-width:1200px){
+        max-width: 900px;
+      }
+      @media screen and (max-width:992px){
+        max-width: 600px;
+      }
+      @media screen and (max-width:768px){
+        max-width: 550px;
+      }
+      @media screen and (max-width:576px){
+        max-width: 280px;
+      }
 		}
 
 		&__card {
+      margin: 0 20px;
+
 		}
+
+}
+
+.services {
+
+  padding-top: 122px;
+  @media screen and (max-width:768px){
+    padding-top: 80px;
+   }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    max-width: 374px;
+    margin: 28px 23px;
+    padding: 29px 17px 29px 31px;
+    max-height: 457.2px;
+    border-radius: 15px;
+    border: solid 3px #ffffff;
+    background-color: #ffffff;
+    box-shadow: 0 0 77px 0 rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease 0s;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+
+
+    &:hover {
+      border: solid 3px #717cff;
+    }
+  }
+
+  &__img {
+    width: 76px;
+    min-height: 76px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    background-color: #717cff;
+  }
+
+  &__article {
+    margin: 0 17px 14px 0;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.54;
+    text-align: left;
+    color: #37474f;
+  }
+
+  &__text {
+    margin: 14px 0 25.6px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.75;
+    letter-spacing: 0.44px;
+    text-align: left;
+    color: rgba(55, 71, 79, 0.72);
+    // flex: 0 0 auto;
+    height: 100%;
+
+  }
+
+  &__btn {
+
+    margin: 0 18px 0px 0;
+    font-size: 17px;
+    max-width: 115px;
+    font-weight: bold;
+    background-color: #ffffff;
+    letter-spacing: 0.44px;
+    text-align: left;
+    color: #717cff;
+    border-radius: 4px;
+    border: solid 2px #ffffff;
+    padding: 4px;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      border: solid 2px #717cff;
+    }
+  }
 }
 
 
@@ -247,6 +361,30 @@
 
 
 
+
+
+//Common Classes
+
+.title {
+  margin: 0 0px 30px 0px;
+  font-size: 37px;
+  font-family: 'Metropolis';
+  font-weight: 600;
+  line-height: 1.46;
+  letter-spacing: -0.46px;
+  text-align: center;
+  color: #373737;
+}
+.text {
+  font-family: 'Metropolis';
+  font-size: 16px;
+  font-weight: 500;
+  max-width: 850px;
+  line-height: 1.75;
+  letter-spacing: 0.44px;
+  text-align: center;
+  color: rgba(55, 71, 79, 0.72);
+}
 
 // Support Classes
 
@@ -355,14 +493,39 @@
  }
 
 
+ // Sliders
 
 
-.slick-slider {
-
+ .featured__slider.slick-slider {
+  position: relative;
   .slick-list {
     overflow: hidden;
   }
   .slick-track{
     display: flex;
   }
+
+  .slick-dots {
+    position: absolute;
+    display: flex;
+    left: calc(50% - 70px);
+    top: 175px;
+    @media screen and (max-width:992px){
+      left: calc(50% - 102px);
+     }
+    li button{
+      font-size: 0;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: rgba(124, 124, 124, 0.32);
+      margin: 0 10px;
+    }
+    li.slick-active button{
+      background-color: #717cff;
+    }
+  }
+
+
+
 }
