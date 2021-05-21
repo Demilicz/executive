@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'icons';
   src:
-    url('fonts/icons.ttf?v49n1r') format('truetype'),
-    url('fonts/icons.woff?v49n1r') format('woff'),
-    url('fonts/icons.svg?v49n1r#icons') format('svg');
+    url('fonts/icons.ttf?xe6jbs') format('truetype'),
+    url('fonts/icons.woff?xe6jbs') format('woff'),
+    url('fonts/icons.svg?xe6jbs#icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -12,7 +12,6 @@
 [class^="_icon-"], [class*=" _icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icons' !important;
-  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -27,18 +26,15 @@
 ._icon-facebook {
   &::before {
     content: "\e900";
-    color: #95e1d3;
   }
 }
 ._icon-instagram {
   &::before {
     content: "\e901";
-    color: #95e1d3;
   }
 }
-._icon-youtube {
+._icon-twitter {
   &::before {
     content: "\e902";
-    color: #95e1d3;
   }
 }
